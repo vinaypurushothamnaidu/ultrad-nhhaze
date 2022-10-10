@@ -16,7 +16,7 @@ from torchvision.models import vgg16
 import network
 
 models_ = {
-	'ultranhhaze':network.B_transformer(),
+	'ultrad':network.B_transformer(),
 }
 
 loaders_ = {
