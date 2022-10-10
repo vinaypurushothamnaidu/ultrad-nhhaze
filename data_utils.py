@@ -64,10 +64,10 @@ class RESIDE_Dataset(data.Dataset):
 
 path = '/kaggle/input/'
 
-NH_haze_train_loader = DataLoader(dataset = RESIDE_Dataset(path + 'nhhaze/NH-HAZE/NH-HAZE', train = True), 
+NH_haze_train_loader = DataLoader(dataset = RESIDE_Dataset(path + 'nh-haze/NH-HAZE/train', train = True), 
                              batch_size = BS, shuffle = True)
 
-NH_haze_test_loader = DataLoader(dataset = RESIDE_Dataset(path + 'nhhaze/NH-HAZE/NH-HAZE-VAL', train = False), 
+NH_haze_test_loader = DataLoader(dataset = RESIDE_Dataset(path + 'nh-haze/NH-HAZE/val', train = False), 
                              batch_size = 1, shuffle = False)
 
 
